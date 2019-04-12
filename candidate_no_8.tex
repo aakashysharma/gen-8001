@@ -106,7 +106,7 @@
 %% \address{Address\fnref{label3}}
 %% \fntext[label3]{}
 
-\title{Challenges for Open Data
+\title{Challenges for Open Data Publishing
 }
 
 %% use optional labels to link authors explicitly to addresses:
@@ -115,7 +115,7 @@
 %% \address[label2]{<address>}
 
 \author{Candidate Number -- 8}
-%\address{54}
+\address{UiT -- The Arctic University of Norway}
 %\\	Troms{\o}, Norway}
 
 %\begin{abstract}
@@ -134,7 +134,7 @@
 %\end{abstract}
 
 \begin{keyword}
-Open Access \sep Ethics \sep Open Data Publishing \sep Privacy
+Open Access \sep Challenges \sep Open Data Publishing 
 %% keywords here, in the form: keyword \sep keyword
 
 %% MSC codes here, in the form: \MSC code \sep code
@@ -149,20 +149,93 @@ Open Access \sep Ethics \sep Open Data Publishing \sep Privacy
 %% main text
 
 \section*{Introduction}
-\subsection*{Challenges}
-While the dataset search~\cite{gdataset} revealed links to dataset provided at Australian Government Open Data~\cite{auopendata}
-\\
-Upon researching further, it was possible to find related research publication~\cite{molster2007community} on the dataset which provided analysis. 
-\section*{Examples}
-Using similar search engines for datasets, we come across other published dataset~\cite{jim_2015_35012}. 
-There is not much meta-information available on the landing page. 
-Even thought such datasets are indexed in EU projects such as 
-Often search engines~\cite{dansNL} reported false objects as datasets. 
-This is discoverable only upon inspection. 
-For example, one of the search result\footnote{\url{https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:71965/tab/2}} indicates the published paper as datafiles. 
-Although this is one of the easy cases, upon inspection it is evident why does it happen. 
-The source of this issue is the listing of research publication in Mendeley\footnote{\url{https://data.mendeley.com/datasets/y8gctjjtys/1}} which lists the paper in the section \textit{data files}.
-\subsection*{Archiving Data}
+Open access (OA) and data publishing has been gaining wide support worldwide from academia and industry. 
+The ubiquity of internet in our daily lives has opened new avenues for making one's research available to a wider audience. 
+Examples such as the journal article about \textit{Darwinius Massilae}~\cite{franzen2009complete} have sparked debates into bringing society and research together with OA. 
+The undisputed benefits of OA~\cite{eysenbach2006citation, willinsky2006access} involves including society and not just prestigious researchers in an ongoing research. 
+While often neglected is the fact that not everyone is able to conduct research to collect data, however it is relatively easy to mine through data to find novel and interesting understanding of our world. 
+To further enhance one's research exposure, probably fueled by the open source movement, researchers are now sharing their raw research data with the world. 
+This is often encouraged and rewarded by publicly funded research~\cite{openaccessEU,openaccessrcn}. 
+Often regarded as a low hanging fruit in open access, researchers have started to share their data along with their publications. 
+While there are many methods to do it, there is yet to develop a common practice which can benefit all. 
+\section*{Challenges}
+The benefits of open data publishing include increased visibility, trustworthiness, collaboration opportunities, and validation. 
+However, the guidelines and standard practices vary a lot. 
+This results in many challenges that an early career researcher or just a curious citizen might face while embarking into a scientific field of their interest. 
+The practices in archiving datasets include self-archiving, submitting to a repository. 
+There are numerous ways to self-archive which can make the process of finding a useful dataset tedious. 
+We will now look into a few of the challenges that are faced by a researcher when publishing a dataset. 
+
+\subsection*{Making data searchable}
+There are multiple search engines available for looking up open data~\cite{gdataset, auopendata,dansNL, openaire}. 
+The amount of results in each depends on the indexing or their partnerships. 
+While Google dataset search~\cite{gdataset} might be comprehensive, it fails to read certain clues in the repository. 
+There are some standardized meta-information about the dataset which is made provided by researcher(s). 
+While this information is helpful in understanding what the dataset is about, it often becomes a challenge to describe and provide all possible attributes it is relevant for. 
+The search engines rely on reading this information to determine the relevance of a dataset to a query. 
+Often researchers are not so willing to provide an exhaustive list of keywords for a dataset which makes it hard to find. 
+Some researchers choose to provide DOI links of their datasets in their publication. 
+However, it is still challenging to publish a dataset with exhaustive list of meta-information for proper indexing by a search engine. 
+\subsection*{Making data available}
+Let us assume that a researcher has put extra effort in describing the dataset, hence it shows up in search results. 
+Another challenge is to make it permanently available. 
+Often it is observed that the link to a dataset in search results is broken. 
+Datasets available on a specific project website are not available as websites are not typically maintained after a project has been completed. 
+Even in case of consortium projects, the datasets are available as long as consortium exists online. 
+While a project may favor making a dataset available on their website with member access only, it makes it challenging to make dataset available after the project. 
+There might be certain goals for making dataset available on a project website, however careful consideration should be taken for dataset's future after the project. 
+
+\subsection*{Making data sensible}
+The indexing requires meta information about the dataset to make it appear in results for relevant search queries. 
+However, challenge still remains to assist another researcher after they have downloaded the dataset. 
+Based upon the complexity of the data, it might not be trivial to understand different entities in the dataset. 
+Even for researchers familiar with a field, abbreviated names can become a challenge to make a sense of the data. 
+The sharing of data within a research group has led to such behavior as others are already familiar with the abbreviated terms. 
+However, one has to think about everyone who might be interested in exploring the data. 
+Hence, it is crucial for the author/owner of the dataset to describe the contents and various abbreviated names in the data. 
+Data repository guidelines~\cite{uitGuidelines, openaccessEU} suggest to provide a README file along with a dataset.
+However, it is still a challenge to carefully explain and provide sufficient background for the data including limitations and outliers. 
+A well written README can be a decisive factor in encouraging validation and further analysis on a dataset to a new researcher. 
+
+
+\subsection*{Making data responsible}
+Various public funding agencies~\cite{openaccessEU, openaccessrcn} encourage open data publishing in their guidelines. 
+However, they advise to publish only the data which is not controversial. 
+In another sense, publish responsibly. 
+There might be inherent risks such as privacy, legal issues, etc. 
+While it is easy to overlook these risks in a competitive environment, complying with all the necessary requirements takes effort. 
+Especially, when it comes to medical data or data with personally identifiable information. 
+The stricter regulations with medical data may sometimes make it impossible to publish it. 
+There are guidelines available at institutional, regional and national level for making sure one's dataset does not leak sensitive information. 
+However, there have been cases~\cite{zimmer2010but, narayanan2008robust} where being compliant has not been enough to protect privacy of individuals. 
+Perhaps there is a stronger need at research data repositories~\cite{nsd, dataverse} to find better mechanisms~\cite{dwork2009differential} to make raw data available. 
+
+
+\section*{Looking Forward}
+We discussed briefly about the challenges faced by researchers today in order to make their data available \textit{openly}. 
+While most challenges require researcher's extra time and effort, there are some which can be resolved with institutional support. 
+Clear guidelines, training and support can reduce the time required for publishing frequently. 
+Supervision in addition to a review process by research data repositories can perhaps reduce the risks involved as they are better equipped to deal with. 
+For example, data availability challenges can be addressed by depositing data with a national or international repository. 
+These repositories are assumed to last longer than a project website. 
+Additionally, repositories can mandate and provide mechanisms for better identifying the dataset by a search engine~\cite{gdataset,openaire, dataverse}. 
+There is still a lot of responsibility on a researcher for making data available for others. 
+It is only with training and experience publishing datasets can become habitual. 
+If we envision an open access future with much needed openness and collaboration, we need to provide support from the early stages of a researcher. 
+
+%While the dataset search~\cite{gdataset} revealed links to dataset provided at Australian Government Open Data~\cite{auopendata}
+%Upon researching further, it was possible to find related research publication~\cite{molster2007community} on the dataset which provided analysis. 
+%
+%
+%Using similar search engines for datasets, we come across other published dataset~\cite{jim_2015_35012}. 
+%There is not much meta-information available on the landing page. 
+%Even thought such datasets are indexed in EU projects such as 
+%Often search engines~\cite{dansNL} reported false objects as datasets. 
+%This is discoverable only upon inspection. 
+%For example, one of the search result\footnote{\url{https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:71965/tab/2}} indicates the published paper as datafiles. 
+%Although this is one of the easy cases, upon inspection it is evident why does it happen. 
+%The source of this issue is the listing of research publication in Mendeley\footnote{\url{https://data.mendeley.com/datasets/y8gctjjtys/1}} which lists the paper in the section \textit{data files}.
+%\subsection*{Archiving Data}
 
 %% References
 %%
